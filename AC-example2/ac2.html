@@ -1,0 +1,151 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.15.1/moment.min.js"></script>
+
+  <link rel="stylesheet" href="ac2.css" />
+  <script src="ac2.js"></script>
+
+  <script>
+    $(function () {
+      $("#startDate").datepicker();
+      $("#endDate").datepicker();
+    });
+  </script>
+
+  <div calss="display-form">
+    <h3>Assignment Calculator</h3>
+    <form class="inline-form">
+      <label class="control-label" for="startDateLabel">Start Date:</label>
+      <div class="input-container">
+        <input type="text" name="startDate" id="startDate">
+        <i class="fas fa-calendar-alt calendar-icon"></i>
+      </div>
+      <label class="control-label" for="endDateLabel">End Date:</label>
+      <div class="input-container">
+        <input type="text" name="endDate" id="endDate">
+        <i class="fas fa-calendar-alt calendar-icon"></i>
+      </div><br />
+
+      <button onclick="return saveData()" class="button">Calculate</button>
+      <button onclick="return clearData()" class="button">Clear</button>
+    </form>
+  </div>
+
+
+  <div id="daysBetweenStatement"></div>
+
+  <div id="disclaimerStatement">
+
+  </div>
+
+  <div style="display: none;" id="step1Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle1"></div>
+        <div class="stepDate" id="step1date"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody1">
+    </div>
+  </div>
+
+  <div style="display: none;" id="step2Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle2"></div>
+        <div id="step2date" class="stepDate"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody2">
+    </div>
+  </div>
+
+  <div style="display: none;" id="step3Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle3"></div>
+        <div class="stepDate" id="step3date"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody3">
+    </div>
+  </div>
+
+  <div style="display: none;" id="step4Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle4"></div>
+        <div class="stepDate" id="step4date"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody4">
+    </div>
+  </div>
+
+  <div style="display: none;" id="step5Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle5"></div>
+        <div class="stepDate" id="step5date"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody5">
+    </div>
+  </div>
+
+  <div style="display: none;" id="step6Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle6"></div>
+        <div class="stepDate" id="step6date"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody6">
+    </div>
+  </div>
+
+  <div style="display: none;" id="step7Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle7"></div>
+        <div id="step7date" class="stepDate"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody7">
+    </div>
+  </div>
+
+  <div style="display: none;" id="step8Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle8"></div>
+        <div id="step8date" class="stepDate"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody8">
+    </div>
+  </div>​
+
+  <div style="display: none;" id="step9Panel" class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div id="stepTitle9"></div>
+        <div id="step9date" class="stepDate"></div>
+      </h3>
+    </div>
+    <div class="panel-body" id="stepBody9">
+    </div>
+  </div>​
+
+</body>
+
+</html>
