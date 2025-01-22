@@ -21,24 +21,31 @@
     });
   </script>
 
-  <div calss="display-form">
-    <h3>Assignment Calculator</h3>
-    <form class="inline-form">
-      <label class="control-label" for="startDateLabel">Start Date:</label>
+<div class="display-form">
+  
+  <form class="inline-form">
+    <h4>Assignment Calculator</h4>
+    <hr>
+  
+    <div class="input-row">
       <div class="input-container">
-        <input type="text" name="startDate" id="startDate">
+        <label class="control-label" for="startDate">Start Date:</label>
+        <input type="text" name="startDate" id="startDate" placeholder="Start Date">
         <i class="fas fa-calendar-alt calendar-icon"></i>
       </div>
-      <label class="control-label" for="endDateLabel">End Date:</label>
       <div class="input-container">
-        <input type="text" name="endDate" id="endDate">
+        <label class="control-label" for="endDate">End Date:</label>
+        <input type="text" name="endDate" id="endDate" placeholder="End Date">
         <i class="fas fa-calendar-alt calendar-icon"></i>
-      </div><br />
-
-      <button onclick="return saveData()" class="button">Calculate</button>
-      <button onclick="return clearData()" class="button">Clear</button>
-    </form>
-  </div>
+      </div>
+    </div>
+    
+    <!-- Buttons -->
+    <br />
+    <button onclick="return saveData()" class="button">Calculate</button>
+    <button onclick="return clearData()" class="button">Clear</button>
+  </form>
+</div>
 
 
   <div id="daysBetweenStatement"></div>
