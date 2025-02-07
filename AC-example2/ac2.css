@@ -15,7 +15,6 @@ p {
 
 p a {
   display: inline; /* Ensures links are inline with text */
-  margin-left: 2px; /* Slight spacing for better readability */
 }
 
 .inline-form {
