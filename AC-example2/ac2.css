@@ -1,55 +1,58 @@
+/* Reset some default spacing */
 * {
-  margin: 0px;
-  padding: 5px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-h4 {
-  padding: 8px;
-  font-weight: bold;
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Improves readability */
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background */
 }
 
+/* Headings */
+h4 {
+  padding: 8px 0;
+  font-weight: bold;
+  margin-bottom: 10px; /* Adds space below headings */
+}
+
+/* Paragraph Styling */
+p {
+  margin-bottom: 12px; /* Adds spacing between paragraphs */
+}
+
+/* Form Container */
 .inline-form {
   background-color: #fff;
   position: relative;
-  margin: 10px;
+  margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
   max-width: 400px;
   width: 100%;
-  text-align: center; /* Center text inside the form */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Label Styling */
 .inline-form label {
   font-size: 14px;
   color: #333;
-  margin-bottom: 2px;
+  margin-bottom: 6px;
   display: inline-block;
   width: 80%;
   font-weight: bold;
-  
 }
 
-.display-form {
-  display:flex;
-  position:relative;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  padding: 15px;
-  background-color: #f0eded; /* Light grey background */
-  border-radius: 10px; /* Optional: Rounded corners for the grey area */
-  max-width: 450px; /* Limit the width of the grey area */
-  margin: 20px auto; /* Center the grey area horizontally and add vertical spacing */
-  box-shadow: 0 10px 19px rgba(0, 0, 0, 0.1);
-}
-
-/* Input Fields Styling */
+/* Input Field Styling */
 .inline-form input[type="text"] {
   width: 80%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px; /* Adds spacing between inputs */
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 15px;
@@ -63,12 +66,40 @@ h4 {
   outline: none;
 }
 
+/* Input Row for Multiple Inputs */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px; /* Space between inputs */
+  width: 100%;
+}
+
+.input-row input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+/* Display Form Container */
+.display-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #f0eded;
+  border-radius: 10px;
+  max-width: 450px;
+  margin: 20px auto;
+  box-shadow: 0 10px 19px rgba(0, 0, 0, 0.1);
+}
+
 /* Button Styling */
 .inline-form button {
-  width: 25%;
-  /* Adjust button width to fit well with layout */
+  width: 45%;
   padding: 10px;
-  margin: 5px;
+  margin: 10px 5px; /* Adds spacing between buttons */
   background-color: #9B172E;
   color: white;
   font-size: 16px;
@@ -95,6 +126,7 @@ h4 {
   background-color: #d32f2f;
 }
 
+/* Icon Inside Input */
 .input-container {
   position: relative;
   width: 100%;
@@ -103,50 +135,35 @@ h4 {
 .input-container input[type="text"] {
   width: 100%;
   padding: 10px;
-  padding-left: 40px;
-  /* Space for the icon */
+  padding-left: 40px; /* Space for the icon */
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 14px;
   box-sizing: border-box;
-}
-.input-row {
-  display:flex;
-  justify-content: space-between; /* Space between the inputs */
-  gap: 10px; /* Optional: Adjust spacing between inputs */
-  width: 100%; /* Ensure the row spans full width */
-}
-
-.input-row input[type="text"] {
-  flex: 1; /* Make inputs equal width */
-  padding: 10px;
-  margin: 0; /* Remove margins to align inputs neatly */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 15px;
 }
 
 .calendar-icon {
   position: absolute;
   top: 80%;
   right: 10px;
-  /* Positioned inside the input field */
   transform: translateY(-80%);
   color: #888;
   font-size: 15px;
   cursor: pointer;
-  /* Change the cursor when hovering over the icon */
 }
 
+/* Small Button */
 .btn-sm {
   padding: 5px 10px;
   font-size: 12px;
 }
-.daysBetweenStatement{
+
+/* Bold Statement */
+.daysBetweenStatement {
   font-weight: bold;
 }
 
-/* Responsive */
+/* Responsive Styling */
 @media (max-width: 768px) {
   .inline-form {
     width: 100%;
@@ -155,7 +172,6 @@ h4 {
 
   .inline-form button {
     width: 100%;
-    margin-right: 0;
     margin-bottom: 10px;
   }
 }
