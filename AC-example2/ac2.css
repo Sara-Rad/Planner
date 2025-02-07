@@ -1,15 +1,16 @@
 #daysBetweenStatement {
   font-weight: bold;
-  padding: 8px;
-  font-size: 13px;
-  margin: 0px;
+  padding: 10px;
+  font-size: 16px;
+
 }
 
 #disclaimerStatement {
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0px;
 }
+
 * {
   margin: 0px;
   box-sizing: border-box;
@@ -27,6 +28,8 @@ p {
 p a {
   display: inline; /* Ensures links are inline with text */
 }
+.panel-title{
+  font-weight: bold;}
 
 .inline-form {
   background-color: #fff;
