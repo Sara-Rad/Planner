@@ -1,93 +1,72 @@
 
-var StepTimes = [.09, .1, .1, .13, .13, .15, .2, .05, .05];
+var StepTimes = [.09, .1, .1, .13, .13, .15, .2, .1];
 var numSteps = StepTimes.length;
 
 var StepTitles = [
-  "Step 1 - Understand your assignment | 5%",
-  "Step 2 - Do your research  | 20%",
-  "Step 3 - Write your draft thesis statement  | 5%",
-  "Step 4 - Write your outline  | 10%",
+  "Step 1 - Understand your assignments and select a topic | 5%",
+  "Step 2 - Do your research  | 15%",
+  "Step 3 - Read and summarize your sources  | 25%",
+  "Step 4 - Draft your thesis and outline  | 10%",
   "Step 5 - Write your draft | 20%",
-  "Step 6 - Revise your draft | 25%",
-  "Step 7 - Finalize your references | 5%",
-  "Step 8 - Proofread and format your final draft | 10%",
-  "Step 9 - Submit your assignment | 0%"
-
+  "Step 6 - Revise your draft | 20%",
+  "Step 7 - Finalize your paper | 5%",
+  "Step 8 - Submit your assignment | 0%" 
 ];
 
 //Remember that the array is 0 based. So 0 is actually step 1, 1 is step 2 and so on...
 //in order to use the " character within a body's string, use the \ character before it.
 var StepBody = [];
-StepBody[0] = "<p>Read through your assignment guidelines and note requirements such as citation style and page limits.</p>" +
-  "<p>If your topic is broad (e.g. 'write an essay about healthcare') then narrow or focus your topic before you start researching.</p>" +
-  "<p>For more about narrowing your topic, try:</p>" +
+StepBody[0] = "<p><strong>A.</strong> Read through your assignment guidelines and note any suggestions or requirements such as the grading criteria, the topic, the number and type of sources, the citation style, and the page limit. These will be your guidelines to make sure you’re correctly completing the assignment. Return to it regularly.</p>" +
+  "<p><strong>B.</strong> You may have an open choice of topic or need to select one from a list of potential subjects. Either way, you’ll have to conduct a preliminary investigation to find a topic you’re interested in with a depth of coverage that can easily be explored. You should also do a general keyword search and look at encyclopedias and literature reviews to narrow your topic and determine a few subtopics. That will help you in your next step.</p>" +
   "<ul>" +
-  "<li><a href='https://uregina.libguides.com/c.php?g=606324' target='_blank'>Developing a Topic for a Research Paper: Narrowing Your Topic</a>, a quick video (3 minutes) plus tips, from University of Regina's Archer Library.</li>" +
-  "<li><a href='https://www.library.unlv.edu/services/instruction/tutorials/topic_narrowing/' target='_blank'>University of Nevada Las Vegas's Topic Narrowing tool</a>, for a mind mapping approach.</li>" +
+  "<li>Our video,<a href='https://library.uwinnipeg.ca/use-the-library/help-with-research/planning-your-research.html' target='_blank'>Understanding Research Assignments</a>,will help you learn how to quickly analyze your assignment requirements and start building a great paper early.</li>" +
+  "<li>For more help on how to narrow your topic, try the<a href='https://kingsu.libguides.com/research/narrowing#s-lg-box-15996969' target='_blank'>research tips and tricks</a>from King’s University.</li>" +
   "</ul>";
 
-StepBody[1] = "<p>Gather research from credible sources to develop your topic. There are many places to search for credible information, including the SFU Library or Google Scholar.</p>" +
-  "<p>Review the information you find to understand your topic. You will want to pay attention to relevant beliefs, trends, thoughts, and facts, giving more emphasis to the kinds of information your assignment asks you to focus on.</p>" +
-  "<p>For more on finding and evaluating sources, see:</p>" +
+StepBody[1] ="<p>Now that you have selected a topic, it is time to gather sources. A good place to start your research is the<a href='https://library.uwinnipeg.ca/' target='_blank'>library website</a>, but you can also use tools like <a href='https://uwinnipeg.idm.oclc.org/login?url=https://scholar.google.ca/' target='_blank'>Google Scholar</a>.Search for your main topics along with the different subtopics you determined during the previous step, one at a time. It might take several tries to find relevant results. Don’t get discouraged!</p>" +
+  "<p>Make sure to download or save any relevant texts and articles you find as you go and note the full reference.</p>" +
   "<ul>" +
-  "<li><strong>Understanding the Scholarly Article pts. 1-3</strong> For how to identify and evaluate scholarly journals, magazines, and trade publications -- both print and online.</li>" +
-  "<li><strong>Choosing and Evaluating Scholarly Sources:</strong> Tips for finding and evaluating the reliability of publications, whether you find them on the open web, in the Library Catalogue, using Google Scholar, or elsewhere.</li>" +
-  "<li><strong>Search the UW Library</strong> for tips for books, and journal articles, and tips from subject expert librarians.</li>" +
-  "</ul>"
-
-StepBody[2] = "<p>Create an overall statement that both summarizes your research and indicates the significance of your main claim or argument.</p>" +
-  "<p>Not every research paper needs an argumentative thesis statement, but if you’re asked to take a position on a topic, then your thesis statement should also be debatable.</p>" +
-  "<p>Remember that an effective thesis statement presents both your main claim and your central reasons for making that claim.</p>" +
-  "<p>You can always adjust your thesis statement as you draft your paper.</p>" +
-  "<p>Looking for more?</p>" +
-  "<ul>" +
-  "<li>Try these tips on <a href='https://academicguides.waldenu.edu/writingcenter/writingprocess/thesisstatements' target='_blank'>constructing a thesis statement</a> from Walden University.</li>" +
-  "<li>You can also review these <a href='/about/branches-depts/slc/writing/argumentation/templates-structuring-argumentative-essays' target='_blank'>templates for argumentation</a>, from the SFU Student Learning Commons.</li>" +
-  "<li><strong>Writing the argumentative essay ppt</strong></li>" +
+  "<li>If you’re not sure where to start, or if you’re feeling stuck,<a href='https://library.uwinnipeg.ca/use-the-library/help-with-research/talk-to-someone.html' target='_blank'>connect with the Library</a>.We’re here to help!Come to the Reference Desk, contact us online via<a href='https://libanswers.uwinnipeg.ca/chat/widget/199987abca6c2b68002cd5131f147bf4' target='_blank'>our help chat</a>, or schedule an appointment with a librarian.</li>" +
+  "<li>Watch our video <a href='https://library.uwinnipeg.ca/use-the-library/help-with-research/searching-for-sources.html' target='_blank'>Searching for Academic Sources</a>to learn how to construct thoughtful searches to find academic sources for your paper.</li>" +
+  "<li>Our video<a href='https://library.uwinnipeg.ca/use-the-library/help-with-research/finding-scholarly-sources.html' target='_blank'>Finding Scholarly Sources</a>will give you strategies for identifying academic sources so you know you’re using credible information in your paper.</li>" +
   "</ul>";
 
-StepBody[3] = "<p>Outline the main sections and/or paragraphs you plan to write about in your paper.</p>" +
-  "<p>Each section or paragraph should tie in with your thesis statement. In your outline, make notes about how each section of your paper relates to your thesis statement.</p>" +
-  "<p>Also note which facts, articles, and/or evidence you will use to support your claims.</p>" +
+StepBody[2] = "<p>The more time you spend reading and understanding your sources, the less energy you’ll need to write your paper. For every relevant source you found, take the time to identify the most useful sections. Note any interesting ideas, data, or facts and the page where you found it. Once you’re done reading, summarize the whole source in your own words.</p>" +
   "<ul>" +
-  "<li>Try these suggestions for the <a href='https://academicguides.waldenu.edu/writingcenter/writingprocess/outlining' target='_blank'>essential sections of an outline</a> from Walden University.</li>" +
-  "<li>The University of Toronto's <a href='http://advice.writing.utoronto.ca/planning/organizing/' target='_blank'>guide to organizing an essay</a> has some good outlining examples.</li>" +
+  "<li>Watch our video<a href='https://www.youtube.com/watch?v=298y6Beap88' target='_blank'>Understand the Scholarly Article (part 2)</a>to learn how academic papers are structured.</li>" +
+  "<li>The University of Connecticut offers resources on<a href='https://writingcenter.uconn.edu/wp-content/uploads/sites/593/2014/06/How_to_Summarize_a_Research_Article1.pdf' target='_blank'>how to summarize a research article</a>[pdf].</li>" +
   "</ul>";
 
-StepBody[4] = "<p>Refer to your outline and expand your ideas into complete sentences and paragraphs.</p>" +
-  "<p>The writing doesn't need to be perfect -- just focus on getting your ideas written and solidifying the key points of your paper.</p>" +
-  "<p>Note the research sources you think you will write about and/or use as evidence in your paper in your outline. Be sure to include where you found the information, who the author is, and when the source was published.</p>" +
-  "<p>For more:</p>" +
+StepBody[3] = "<p><strong>A.</strong> It’s now time to create your thesis statement. A thesis statement condenses and articulates your paper’s argument or main claim. It should be brief, one or two sentences long, dealing with a specific topic, and arguable.</p>" +
+  "<p><strong>B.</strong> You’ll also need to create your outline. Try to imagine what questions will be addressed in each section of your paper and how each section will flow into the next. Ensure that each section ties in with your thesis statement and that all subtopics are adequately addressed. Note which sources, facts, and evidence you will use in each section to support your claims. One source can appear in multiple sections of your paper, that’s perfectly okay.</p>" +
   "<ul>" +
-  "<li>Review these tips for <a href='https://hsp.berkeley.edu/writingdraft' target='_blank'>writing a first draft</a> from Berkeley.</li>" +
-  "<li>Stuck? See these tips for overcoming writer's block: <a href='https://academicguides.waldenu.edu/writingcenter/writingprocess/writersblock' target='_blank'>Writers Block</a> (from Walden University) and <a href='https://owl.purdue.edu/owl/general_writing/the_writing_process/writers_block/index.html' target='_blank'>Symptoms and Cures for Writer's Block</a> (from Purdue University).</li>" +
+  "<li>For more help on how to construct a good thesis statement, check<a href='https://academicguides.waldenu.edu/writingcenter/writingprocess/thesisstatements' target='_blank'>Walden University’s tips</a>.</li>" +
+  "<li>You can also try their <a href='https://academicguides.waldenu.edu/writingcenter/writingprocess/outlining' target='_blank'>outlining strategies</a> or look at the <a href='https://advice.writing.utoronto.ca/planning/organizing/' target='_blank'>University of Toronto’s guide to organizing an essay</a>.</li>" +
   "</ul>";
 
-StepBody[5] = "<p>Revision takes time.</p>" +
-  "<p>In this step, look again at your thesis and make sure your paper advances your argument. At this point you might need to make structural changes.</p>" +
-  "<p>Where revision asks you to look at the structure, organization, and overall argument in your paper, editing is about taking a close look at your sentence structures, transitions, and the concision of your writing.</p>" +
-  "<p>For more detailed tips and examples:</p>" +
+
+StepBody[4] = "<p>It’s finally time to write! Refer to your outline and develop your paper by using the notes from your readings. Add your own thoughts and commentaries on the ideas you found in the resources. Don’t forget to include in-text citations to indicate the source of each idea you’re using.</p>" +
+  "<p>It’s okay if the writing is not perfect at this stage—you’ll have time to revise your draft later.</p>" +
   "<ul>" +
-  "<li>Check out <a href='https://writingcenter.fas.harvard.edu/pages/revising-draft' target='_blank'>Revising the Draft</a> from the Harvard College Writing Center</li>" +
-  "<li>To ensure your paper meets the assignment guidelines, and to check for cohesion, try <a href='https://writing.wisc.edu/handbook/process/reverseoutlines/' target='_blank'>Reverse Outlines: A Writer's Technique for Examining Organization</a> (University of Wisconsin - Madison).</li>" +
+  "<li>The Writing Centre</a> gives you access to multiple<a href='https://www.uwinnipeg.ca/writing-centre/resources-for-writers.html' target='_blank'>resources on academic writing.</li>" +
   "</ul>";
 
-StepBody[6] = "<p>Make sure that all your sources are properly integrated and cited. This step is important for ensuring academic integrity.</p>" +
-  "<ul>" +
-  "<li>Review the <a href='/help/cite-write/citation-style-guides' target='_blank'>guidelines of the citation style</a> you have been asked to use (e.g. APA, MLA, Chicago).</li>" +
-  "<li>When do you need to cite? Test your knowledge with the <a href='/help/academic-integrity/plagiarism-tutorial' target='_blank'>SFU plagiarism tutorial</a>.</li>" +
-  "<li>Need more help? <a href='https://library.uwinnipeg.ca/use-the-library/help-with-research/talk-to-someone.html' target='_blank'>Ask a Librarian</a> your citation question.</li>" +
-  "</ul>";
+StepBody[5] = "<p>Take the time to revise your draft, focusing on the organization and arguments of your paper. Check your assignment guidelines (step 1) and make sure you meet all of the criteria described. Verify that the introduction, thesis, and conclusion are clear and logical and that all of your ideas are sufficiently developed. Ensure that the text flows smoothly and work on your transitions or rearrange your ideas if necessary.</p>" +  
+  "<ul>" +  
+  "<li>Check out those tips on<a href='https://crk.umn.edu/writing-center/how-revise-drafts' target='_blank'>how to revise your first draft</a>from the University of Minnesota Crookston.</li>" +  
+  "</ul>";   
 
-StepBody[7] = "<p>Review the style, clarity and flow of your writing. Focus on individual sentences and look for common errors in sentence structure, punctuation, grammar, or usage. Read your work out loud to help you catch mistakes. Printing out and checking a hard copy can also help you to notice typos that you might miss on the screen. </p>" +
-  "<p>Finally, format your paper to fit all your assignment guidelines.</p>" +
-  "<ul>" +
-  "<li>Try these techniques for <a href='https://owl.purdue.edu/owl/general_writing/mechanics/sentence_clarity.html' target='_blank'>sentence clarity</a> from Purdue University.</li>" +
-  "<li>Review these <a href='/about/branches-depts/slc/writing/revising/self-help-editing-tips' target='_blank'>Top 10 Self-Help Editing Tips</a> from the Student Learning Commons</li>" +
-  "</ul>";
 
-StepBody[8] = "<p>Submit your assignment, and you're done!</p>" +
-  "<p>Remember that your instructor will provide you with helpful feedback on your assignment that can help you to improve both your writing and your writing process for future work. </p>";
+StepBody[6] ="<p>To ensure the academic honesty of your work, properly reference each in-text citation you created. Copy and paste the full reference you created in step 2 into the bibliography, works cited, or references section at the end of your paper. Make sure you meet the guidelines of the citation style you’re required to use (see the assignment guidelines you noted earlier).</p>" +  
+  "<p>Take a break after writing and before starting proofreading. Once you’re ready, read over your text a few times and review any mistakes in grammar, punctuation, etc. You can read your paper out loud in a tape recorder or ask someone to read it to you to help you catch any mistakes. Ensure the format of your paper follows all your assignment guidelines (step 1).</p>" +  
+  "<ul>" +  
+  "<li>Watch our video about<a href='https://library.uwinnipeg.ca/use-the-library/help-with-research/citing-and-referencing-sources.html' target='_blank'>Citing and Referencing Sources</a>.</li>" +  
+  "<li>Check the Writing Centre<a href='https://www.uwinnipeg.ca/writing-centre/resources-for-writers.html' target='_blank'>resources on style, grammar, and punctuation</a>to help you proofread your assignment.</li>" +  
+  "</ul>";  
+
+
+StepBody[7] = "<p>You did it! Submit your assignment, and you’re done. Congratulations!</p>";  
+
 
 function showPanels() {
   for (i = 1; i <= StepTimes.length; i++) {
