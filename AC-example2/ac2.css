@@ -153,13 +153,17 @@ p a {
   font-weight: bold;
   padding: 5px;
   font-size:13px;
+   margin: 0px;
 }
 .disclaimerStatement{
-   padding: 5px;
+   padding: 8px;
   font-size:14px;
+   margin: 0px;
 }
 .panel-title{
   padding: 5px;
+   margin: 0px;
+  box-sizing: border-box;
 }
 
 /* Responsive */
