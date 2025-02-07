@@ -151,7 +151,15 @@ p a {
 }
 .daysBetweenStatement{
   font-weight: bold;
+  padding: 5px;
   font-size:13px;
+}
+.disclaimerStatement{
+   padding: 5px;
+  font-size:14px;
+}
+.panel-title{
+  padding: 5px;
 }
 
 /* Responsive */
