@@ -8,14 +8,14 @@
 /* General Body Styling */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6; /* Improves readability */
-  padding: 10px;
+  line-height: 1.8; /* Improves readability */
+  padding: 15px;
   background-color: #f8f9fa; /* Light background */
 }
 
 /* Headings */
 h4 {
-  padding: 8px 0;
+  padding: 10px 0;
   font-weight: bold;
   margin-bottom: 10px; /* Adds space below headings */
 }
