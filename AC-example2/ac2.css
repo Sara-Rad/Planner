@@ -16,8 +16,6 @@ p {
 p a {
   display: inline; /* Ensures links are inline with text */
   margin-left: 2px; /* Slight spacing for better readability */
-  text-decoration: none;
-  color: #007bff; /* Link color */
 }
 
 .inline-form {
