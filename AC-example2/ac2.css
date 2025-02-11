@@ -23,6 +23,7 @@ p a {
 }
 ul li{
       padding: inherit;
+      margin-left: 15px;
 }
   
 .panel-title{
