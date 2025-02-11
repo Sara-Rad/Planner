@@ -21,6 +21,10 @@ p {
 p a {
   display: inline; /* Ensures links are inline with text */
 }
+ul li{
+      padding: inherit;
+}
+  
 .panel-title{
   font-weight: bold;}
 
