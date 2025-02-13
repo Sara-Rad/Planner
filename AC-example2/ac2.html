@@ -21,31 +21,34 @@
     });
   </script>
 
-<div class="display-form">
-  
-  <form class="inline-form">
-    <h4>Assignment Calculator</h4>
-    <hr>
-  
-    <div class="input-row">
-      <div class="input-container">
-        <label class="control-label" for="startDate">Start Date:</label>
-        <input type="text" name="startDate" id="startDate" placeholder="Start Date">
-        <i class="fas fa-calendar-alt calendar-icon"></i>
+  <div class="display-form">
+
+    <form class="inline-form">
+      <h4>Assignment Calculator</h4>
+      <hr>
+
+      <div class="input-row">
+        <div class="input-container">
+          <label class="control-label" for="startDate">Start Date:</label>
+          <input type="text" name="startDate" id="startDate" placeholder="Start Date">
+          <i class="fas fa-calendar-alt calendar-icon"></i>
+        </div>
+        <div class="input-container">
+          <label class="control-label" for="endDate">End Date:</label>
+          <input type="text" name="endDate" id="endDate" placeholder="End Date">
+          <i class="fas fa-calendar-alt calendar-icon"></i>
+        </div>
       </div>
-      <div class="input-container">
-        <label class="control-label" for="endDate">End Date:</label>
-        <input type="text" name="endDate" id="endDate" placeholder="End Date">
-        <i class="fas fa-calendar-alt calendar-icon"></i>
-      </div>
-    </div>
+
+      <!-- Buttons -->
+      <br />
+      <button onclick="return saveData()" class="button">Calculate</button>
+      <button onclick="return clearData()" class="button">Clear</button>
     
-    <!-- Buttons -->
-    <br />
-    <button onclick="return saveData()" class="button">Calculate</button>
-    <button onclick="return clearData()" class="button">Clear</button>
-  </form>
-</div>
+    </form>
+    
+
+  </div>
 
 
   <div id="daysBetweenStatement"></div>
